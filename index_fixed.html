@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auside Construction</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #f5f5f5;
+    }
+    header {
+      background-color: #000;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #d4af37;
+    }
+    header .left {
+      display: flex;
+      align-items: center;
+    }
+    header img {
+      height: 60px;
+      margin-right: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #d4af37;
+    }
+    .lang-toggle {
+      cursor: pointer;
+      font-size: 1em;
+      color: #f5f5f5;
+      border: 1px solid #d4af37;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .hero {
+      background-image: url('auside_hero.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h2 {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      color: #fff;
+      font-size: 2em;
+      border: 2px solid #d4af37;
+    }
+    .about {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #191919;
+    }
+    .about h2 {
+      color: #d4af37;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 20px;
+      background-color: #1a1a1a;
+    }
+    .gallery img {
+      max-width: 300px;
+      border: 2px solid #d4af37;
+      border-radius: 4px;
+    }
+    .map {
+      padding: 40px 20px;
+      background-color: #111;
+    }
+    .map h2 {
+      text-align: center;
+      color: #d4af37;
+    }
+    footer {
+      background-color: #000;
+      color: #ccc;
+      text-align: center;
+      padding: 30px 20px;
+      border-top: 2px solid #d4af37;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="left">
+      <img src="auside_logo.png" alt="Auside Construction Logo">
+      <h1>Auside Construction</h1>
+    </div>
+    <div class="lang-toggle" onclick="toggleLanguage()">🇨🇳 中文</div>
+  </header>
+
+  <section class="hero">
+    <h2 data-en="We build with precision and pride." data-zh="我们以专业和热情筑造每一个项目。">We build with precision and pride.</h2>
+  </section>
+
+  <section class="about">
+    <h2 data-en="About Us" data-zh="关于我们">About Us</h2>
+    <p data-en="At Auside Construction, we bring craftsmanship, integrity, and innovation to every project. With years of experience in both residential and commercial construction, we are committed to delivering results that exceed expectations—on time and on budget."
+       data-zh="Auside Construction 致力于将工艺、诚信与创新融入每一个项目。我们在住宅与商业施工领域拥有多年经验，始终坚持准时、高效、高品质地完成每一项工程，超越客户期望。">
+      At Auside Construction, we bring craftsmanship, integrity, and innovation to every project. With years of experience in both residential and commercial construction, we are committed to delivering results that exceed expectations—on time and on budget.
+    </p>
+  </section>
+
+  <section class="gallery">
+    <img src="gallery/gallery1.jpg" alt="Project 1">
+    <img src="gallery/gallery2.jpg" alt="Project 2">
+    <img src="gallery/gallery3.jpg" alt="Project 3">
+    <img src="gallery/gallery4.jpg" alt="Project 4">
+    <img src="gallery/gallery5.jpg" alt="Project 5">
+    <img src="gallery/gallery6.jpg" alt="Project 6">
+    <img src="gallery/gallery7.jpg" alt="Project 7">
+    <img src="gallery/gallery8.jpg" alt="Project 8">
+    <img src="gallery/gallery9.jpg" alt="Project 9">
+    <img src="gallery/gallery10.jpg" alt="Project 10">
+    <img src="gallery/gallery11.jpg" alt="Project 11">
+    <img src="gallery/gallery12.jpg" alt="Project 12">
+    <img src="gallery/gallery13.jpg" alt="Project 13">
+    <img src="gallery/gallery14.jpg" alt="Project 14">
+  </section>
+
+  <section class="map">
+    <h2>Our Service Area – Bay Area</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317250.30291818635!2d-122.36879034616004!3d37.75767936499309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e21c1164a1f%3A0xf6170f6e1f838be9!2sBay%20Area%2C%20CA!5e0!3m2!1sen!2sus!4v1711317159986!5m2!1sen!2sus" 
+      width="100%" 
+      height="400" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+  <footer>
+    <p data-en="Phone: 510-991-5666" data-zh="电话：510-991-5666">Phone: 510-991-5666</p>
+    <p data-en="Email: Ausideconstruction@gmail.com" data-zh="邮箱：Ausideconstruction@gmail.com">Email: Ausideconstruction@gmail.com</p>
+    <p>&copy; 2025 Auside Construction. All rights reserved.</p>
+  </footer>
+
+  <script>
+    let isEnglish = true;
+    function toggleLanguage() {
+      isEnglish = !isEnglish;
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.innerText = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-zh');
+      });
+      document.querySelector('.lang-toggle').innerText = isEnglish ? '🇨🇳 中文' : '🇺🇸 English';
+    }
+  </script>
+</body>
+</html>
