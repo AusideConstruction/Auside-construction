@@ -41,7 +41,7 @@
       border-radius: 5px;
     }
     .hero {
-      background-image: url('auside_hero.jpg');
+      background-image: url('/mnt/data/auside_hero.jpg');
       background-size: cover;
       background-position: center;
       height: 60vh;
@@ -78,6 +78,14 @@
       border: 2px solid #d4af37;
       border-radius: 4px;
     }
+    .map {
+      padding: 40px 20px;
+      background-color: #111;
+    }
+    .map h2 {
+      text-align: center;
+      color: #d4af37;
+    }
     footer {
       background-color: #000;
       color: #ccc;
@@ -93,7 +101,7 @@
 <body>
   <header>
     <div class="left">
-      <img src="auside_logo.png" alt="Auside Construction Logo">
+      <img src="/mnt/data/auside_logo.png" alt="Auside Construction Logo">
       <h1>Auside Construction</h1>
     </div>
     <div class="lang-toggle" onclick="toggleLanguage()">🇨🇳 中文</div>
@@ -126,6 +134,19 @@
     <img src="gallery/gallery12.jpg" alt="Project 12">
     <img src="gallery/gallery13.jpg" alt="Project 13">
     <img src="gallery/gallery14.jpg" alt="Project 14">
+  </section>
+
+  <section class="map">
+    <h2>Our Service Area – Bay Area</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317250.30291818635!2d-122.36879034616004!3d37.75767936499309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e21c1164a1f%3A0xf6170f6e1f838be9!2sBay%20Area%2C%20CA!5e0!3m2!1sen!2sus!4v1711317159986!5m2!1sen!2sus" 
+      width="100%" 
+      height="400" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
   </section>
 
   <footer>
