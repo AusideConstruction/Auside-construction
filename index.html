@@ -1,63 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Auside Construction</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <script src="language.js" defer></script>
 </head>
-<body class="dark-theme">
+<body>
   <header>
-    <img src="auside_logo.png" alt="Auside Construction Logo" class="logo" />
-    <h1>Auside Construction</h1>
+    <img src="auside_logo.png" alt="Logo" class="logo">
     <nav>
-      <a href="index.html" data-en="Home" data-zh="首页">Home</a>
-      <a href="about.html" data-en="About" data-zh="关于我们">About</a>
-      <a href="services.html" data-en="Services" data-zh="服务内容">Services</a>
-      <a href="projects.html" data-en="Projects" data-zh="案例展示">Projects</a>
-      <a href="testimonials.html" data-en="Testimonials" data-zh="客户评价">Testimonials</a>
-      <a href="contact.html" data-en="Contact" data-zh="联系我们">Contact</a>
-      <button class="lang-toggle" onclick="toggleLang()">CN 中文</button>
+      <ul>
+        <li><a href="index.html" data-en="Home" data-zh="首页">Home</a></li>
+        <li><a href="about.html" data-en="About" data-zh="关于我们">About</a></li>
+        <li><a href="services.html" data-en="Services" data-zh="服务内容">Services</a></li>
+        <li><a href="projects.html" data-en="Projects" data-zh="案例展示">Projects</a></li>
+        <li><a href="testimonials.html" data-en="Testimonials" data-zh="客户评价">Testimonials</a></li>
+        <li><a href="contact.html" data-en="Contact" data-zh="联系我们">Contact</a></li>
+      </ul>
     </nav>
+    <button class="lang-toggle">CN 中文</button>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2 data-en="We build with precision and pride." data-zh="我们以精湛工艺和专业精神打造每一个项目">We build with precision and pride.</h2>
-    </section>
+  <section class="hero">
+    <h1 data-en="We build with precision and pride." data-zh="我们以精湛工艺和专业精神打造每一个项目">We build with precision and pride.</h1>
+  </section>
 
-    <section class="showcase">
-      <h3 data-en="Featured Projects" data-zh="精选案例">Featured Projects</h3>
-      <div class="gallery">
-        <img src="gallery/IMG_5755.JPG" alt="Modern Bathroom">
-        <img src="gallery/IMG_5756.JPG" alt="Vanity & Lighting">
-        <img src="gallery/a50db8b9fb4aba6b5dcbeffb8739a9b0.JPG" alt="Kitchen Work">
-      </div>
-    </section>
-  </main>
+  <section class="featured">
+    <h2 data-en="Featured Projects" data-zh="精选案例">Featured Projects</h2>
+    <div class="featured-gallery">
+        <div class="featured-item">
+          <img src="gallery/e93a350df3ee6590a6af69e296e9e2ec.JPG" alt="Project 1">
+        </div>
+        <div class="featured-item">
+          <img src="gallery/edd5f0fa668aff9c8ce14e82d4e8d2ad.JPG" alt="Project 2">
+        </div>
+        <div class="featured-item">
+          <img src="gallery/gallery1.jpg" alt="Project 3">
+        </div>
+    </div>
+  </section>
 
   <footer>
     <p data-en="Phone: 510-991-5666" data-zh="电话：510-991-5666">Phone: 510-991-5666</p>
     <p data-en="Email: Ausideconstruction@gmail.com" data-zh="邮箱：Ausideconstruction@gmail.com">Email: Ausideconstruction@gmail.com</p>
     <p>&copy; 2025 Auside Construction. All rights reserved.</p>
   </footer>
-
-  <script>
-    let isEnglish = true;
-    function toggleLang() {
-      isEnglish = !isEnglish;
-      document.querySelectorAll('[data-en]').forEach(el => {
-        el.innerText = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-zh');
-      });
-      document.querySelector('.lang-toggle').innerText = isEnglish ? 'CN 中文' : 'EN English';
-    }
-
-    // 初始化默认语言为英文
-    window.onload = () => {
-      toggleLang();
-      toggleLang();
-    };
-  </script>
 </body>
 </html>
