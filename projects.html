@@ -1,15 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects - Auside Construction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auside Construction</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="lightbox.css" />
+  <script src="language.js" defer></script>
 </head>
 <body>
   <header>
-    <img src="auside_logo.png" alt="Auside Logo" class="logo" />
+    <img src="auside_logo.png" alt="Auside Construction Logo" class="logo" />
     <nav>
       <a href="index.html" data-en="Home" data-zh="首页">Home</a>
       <a href="about.html" data-en="About" data-zh="关于我们">About</a>
@@ -17,25 +18,29 @@
       <a href="projects.html" data-en="Projects" data-zh="案例展示">Projects</a>
       <a href="testimonials.html" data-en="Testimonials" data-zh="客户评价">Testimonials</a>
       <a href="contact.html" data-en="Contact" data-zh="联系我们">Contact</a>
-      <button class="lang-toggle" onclick="toggleLang()">CN 中文</button>
     </nav>
+    <button class="lang-toggle" onclick="toggleLanguage()">CN 中文</button>
   </header>
   <main>
-    <h2 data-en="Our Projects" data-zh="我们的项目">Our Projects</h2>
-    <div class="gallery">
-      <a href="gallery/IMG_5755.jpg" data-lightbox="gallery" data-title="Modern Bathroom">
-        <img src="gallery/IMG_5755.jpg" alt="Bathroom" />
-      </a>
-      <a href="gallery/IMG_5756.jpg" data-lightbox="gallery" data-title="Elegant Vanity">
-        <img src="gallery/IMG_5756.jpg" alt="Vanity" />
-      </a>
-      <a href="gallery/a50db8b9fb4aba6b5dcbeffb8739a9b0.jpg" data-lightbox="gallery" data-title="Kitchen Remodel">
-        <img src="gallery/a50db8b9fb4aba6b5dcbeffb8739a9b0.jpg" alt="Kitchen" />
-      </a>
-    </div>
+
+<h2 data-en="Projects" data-zh="案例展示">Projects</h2>
+<div class="gallery">
+  <img src="gallery/IMG_5755.jpg" alt="Project 1">
+  <img src="gallery/IMG_5756.jpg" alt="Project 2">
+  <img src="gallery/IMG_5757.jpg" alt="Project 3">
+  <img src="gallery/IMG_5758.jpg" alt="Project 4">
+  <img src="gallery/IMG_5759.jpg" alt="Project 5">
+  <img src="gallery/edd5f0fa668aff9c8ce14e82d4e8d2ad.JPG" alt="Project 6">
+  <img src="gallery/e93a350df3ee6590a6af69e296e9e2ec.JPG" alt="Project 7">
+  <img src="gallery/a50db8b9fb4aba6b5dcbeffb8739a9b0.JPG" alt="Project 8">
+  <img src="gallery/IMG_6352.HEIC" alt="Project 9">
+  <img src="gallery/IMG_7477.HEIC" alt="Project 10">
+</div>
   </main>
-  <footer>&copy; 2025 Auside Construction</footer>
-  <script src="language.js"></script>
-  <script src="lightbox-plus-jquery.min.js"></script>
+  <footer>
+    <p data-en="Phone: 510-991-5666" data-zh="电话：510-991-5666">Phone: 510-991-5666</p>
+    <p data-en="Email: Ausideconstruction@gmail.com" data-zh="邮箱：Ausideconstruction@gmail.com">Email: Ausideconstruction@gmail.com</p>
+    <p>&copy; 2025 Auside Construction. All rights reserved.</p>
+  </footer>
 </body>
 </html>
