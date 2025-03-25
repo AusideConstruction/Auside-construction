@@ -29,9 +29,9 @@
     <section class="showcase">
       <h3 data-en="Featured Projects" data-zh="精选案例">Featured Projects</h3>
       <div class="gallery">
-        <img src="gallery/IMG_5755.jpg" alt="Modern Bathroom">
-        <img src="gallery/IMG_5756.jpg" alt="Vanity & Lighting">
-        <img src="gallery/a50db8b9fb4aba6b5dcbeffb8739a9b0.jpg" alt="Kitchen Work">
+        <img src="gallery/IMG_5755.JPG" alt="Modern Bathroom">
+        <img src="gallery/IMG_5756.JPG" alt="Vanity & Lighting">
+        <img src="gallery/a50db8b9fb4aba6b5dcbeffb8739a9b0.JPG" alt="Kitchen Work">
       </div>
     </section>
   </main>
@@ -42,6 +42,20 @@
     <p>&copy; 2025 Auside Construction. All rights reserved.</p>
   </footer>
 
-  <script src="language.js"></script>
+  <script>
+    let isEnglish = true;
+    function toggleLang() {
+      isEnglish = !isEnglish;
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.innerText = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-zh');
+      });
+      document.querySelector('.lang-toggle').innerText = isEnglish ? 'CN 中文' : 'US English';
+    }
+    window.onload = () => {
+      // 强制显示英文作为默认语言
+      toggleLang();
+      toggleLang(); // 调两次，确保初始为英文状态
+    };
+  </script>
 </body>
 </html>
