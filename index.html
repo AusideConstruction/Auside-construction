@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,12 +50,13 @@
       document.querySelectorAll('[data-en]').forEach(el => {
         el.innerText = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-zh');
       });
-      document.querySelector('.lang-toggle').innerText = isEnglish ? 'CN 中文' : 'US English';
+      document.querySelector('.lang-toggle').innerText = isEnglish ? 'CN 中文' : 'EN English';
     }
+
+    // 初始化默认语言为英文
     window.onload = () => {
-      // 强制显示英文作为默认语言
       toggleLang();
-      toggleLang(); // 调两次，确保初始为英文状态
+      toggleLang();
     };
   </script>
 </body>
