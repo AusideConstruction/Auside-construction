@@ -1,50 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Auside Construction</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="language.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auside Construction</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="auside_logo.png" alt="Logo" class="logo">
-    <nav>
-      <ul>
-        <li><a href="index.html" data-en="Home" data-zh="首页">Home</a></li>
-        <li><a href="about.html" data-en="About" data-zh="关于我们">About</a></li>
-        <li><a href="services.html" data-en="Services" data-zh="服务内容">Services</a></li>
-        <li><a href="projects.html" data-en="Projects" data-zh="案例展示">Projects</a></li>
-        <li><a href="testimonials.html" data-en="Testimonials" data-zh="客户评价">Testimonials</a></li>
-        <li><a href="contact.html" data-en="Contact" data-zh="联系我们">Contact</a></li>
-      </ul>
-    </nav>
-    <button class="lang-toggle">CN 中文</button>
-  </header>
+    <header>
+        <img src="auside_logo.png" alt="Auside Construction Logo" class="logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" data-en="Home" data-zh="首页">Home</a></li>
+                <li><a href="about.html" data-en="About" data-zh="关于我们">About</a></li>
+                <li><a href="services.html" data-en="Services" data-zh="服务内容">Services</a></li>
+                <li><a href="projects.html" data-en="Projects" data-zh="案例展示">Projects</a></li>
+                <li><a href="testimonials.html" data-en="Testimonials" data-zh="客户评价">Testimonials</a></li>
+                <li><a href="contact.html" data-en="Contact" data-zh="联系我们">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="lang-toggle" onclick="toggleLanguage()">CN 中文</button>
+    </header>
 
-  <section class="auside_hero.png">
-    <h1 data-en="We build with precision and pride." data-zh="我们以精湛工艺和专业精神打造每一个项目">We build with precision and pride.</h1>
-  </section>
+    <section class="hero">
+        <div class="hero-text">
+            <h1 data-en="We build with precision and pride." data-zh="我们以精湛工艺和专业精神打造每一个项目">We build with precision and pride.</h1>
+        </div>
+    </section>
 
-  <section class="featured">
-    <h2 data-en="Featured Projects" data-zh="精选案例">Featured Projects</h2>
-    <div class="featured-gallery">
-        <div class="featured-item">
-          <img src="gallery/e93a350df3ee6590a6af69e296e9e2ec.JPG" alt="Project 1">
+    <section class="featured-projects">
+        <h2 data-en="Featured Projects" data-zh="精选案例">Featured Projects</h2>
+        <div class="gallery-row">
+            <img src="gallery/gallery9.jpg" alt="Kitchen Work">
+            <img src="gallery/gallery14.jpg" alt="Vanity & Lighting">
+            <img src="gallery/gallery11.jpg" alt="Modern Bathroom">
         </div>
-        <div class="featured-item">
-          <img src="gallery/edd5f0fa668aff9c8ce14e82d4e8d2ad.JPG" alt="Project 2">
-        </div>
-        <div class="featured-item">
-          <img src="gallery/gallery1.jpg" alt="Project 3">
-        </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <p data-en="Phone: 510-991-5666" data-zh="电话：510-991-5666">Phone: 510-991-5666</p>
-    <p data-en="Email: Ausideconstruction@gmail.com" data-zh="邮箱：Ausideconstruction@gmail.com">Email: Ausideconstruction@gmail.com</p>
-    <p>&copy; 2025 Auside Construction. All rights reserved.</p>
-  </footer>
+    <footer>
+        <p data-en="Phone: 510-991-5666" data-zh="电话：510-991-5666">Phone: 510-991-5666</p>
+        <p data-en="Email: Ausideconstruction@gmail.com" data-zh="邮箱：Ausideconstruction@gmail.com">Email: Ausideconstruction@gmail.com</p>
+        <p>&copy; 2025 Auside Construction. All rights reserved.</p>
+    </footer>
+
+    <script src="language.js"></script>
 </body>
 </html>
